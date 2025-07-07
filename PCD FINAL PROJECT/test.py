@@ -1,7 +1,10 @@
 import os
+import cv2
 import numpy as np
 import streamlit as st
 import random
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 
 # --------------------- Fungsi Dataset --------------------- #
 def load_tomato_dataset(base_path='dataset'):
